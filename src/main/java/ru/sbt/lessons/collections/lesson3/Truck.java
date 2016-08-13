@@ -30,6 +30,15 @@ public class Truck {
     }
 
     @Override
+    public String toString() {
+        return "Truck{" +
+                "capacity=" + capacity +
+                ", id=" + id +
+                ", type='" + type + '\'' +
+                '}';
+    }
+
+    @Override
     public int hashCode() {
         return (int) id;
     }
@@ -55,4 +64,6 @@ public class Truck {
     // Нужно хранить в мапе не саму машину, а массив машин, который можно будет тянуть
     // по типу.
     // multimap
+
+    // параметризовать
 }
