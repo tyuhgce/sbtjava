@@ -1,4 +1,4 @@
-package com.springinaction.springidol;
+package main.java.SpringInAction.springidol;
 
 /**
  * Created by SBTJavastudent on 06.08.2016.

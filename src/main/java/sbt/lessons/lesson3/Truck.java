@@ -1,4 +1,4 @@
-package main.java.ru.sbt.lessons.collections.lesson3;
+package main.java.sbt.lessons.lesson3;
 
 /**
  * Created by SBTJavastudent on 13.08.2016.

@@ -4,7 +4,7 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
     <bean id="duke"
-        class="com.springinaction.springidol.Juggler" />
+        class="main.java.SpringInAction.springidol.Juggler" />
 
 
 </beans>

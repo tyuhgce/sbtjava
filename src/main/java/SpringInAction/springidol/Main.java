@@ -1,6 +1,5 @@
-package com.springinaction.springidol;
+package main.java.SpringInAction.springidol;
 
-import org.springframework.beans.propertyeditors.StringArrayPropertyEditor;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
