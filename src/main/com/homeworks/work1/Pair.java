@@ -1,4 +1,4 @@
-package com.homeworks.work1;
+package main.com.homeworks.work1;
 
 /**
  * Created by god on 8/7/2016.

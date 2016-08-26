@@ -1,4 +1,4 @@
-package com.homeworks.work1;
+package main.com.homeworks.work1;
 
 import java.io.IOException;
 import java.nio.charset.Charset;
