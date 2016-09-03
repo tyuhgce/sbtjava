@@ -101,3 +101,8 @@ public class MyProxy {
     }
 
 }
+
+
+class Calculator {
+
+}
