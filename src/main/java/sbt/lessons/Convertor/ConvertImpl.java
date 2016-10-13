@@ -7,10 +7,9 @@ public class ConvertImpl implements Convert {
 
     public static void main(String[] args) {
         ConvertImpl convert = new ConvertImpl();
-
         convert.AddConvert(String.class, t -> t.toString());
-
-        convert.convert(25, String.class);
+        String str = convert.convert(25, String.class);
+        System.out.println(str);
     }
 
     private Map<Class, ConvertTo> map;
@@ -21,7 +20,7 @@ public class ConvertImpl implements Convert {
 
     @Override
     public <T> T convert(Object valueFrom, Class<T> resultClass) {
-        ConvertTo<T> convertTo = map.get(valueFrom.getClass());
+        ConvertTo<T> convertTo = map.get(resultClass);
         if (convertTo != null) {
             return convertTo.convert(valueFrom);
         }
