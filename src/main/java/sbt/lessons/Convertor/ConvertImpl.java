@@ -8,7 +8,7 @@ public class ConvertImpl implements Convert {
     public static void main(String[] args) {
         ConvertImpl convert = new ConvertImpl();
 
-        convert.AddConvert(Integer.class, t -> t.toString());
+        convert.AddConvert(String.class, t -> t.toString());
 
         convert.convert(25, String.class);
     }
@@ -29,11 +29,11 @@ public class ConvertImpl implements Convert {
     }
 
     @Override
-    public <T, K> void AddConvert(Class<T> cl, ConvertTo<K> convertTo) {
-        if (cl == null || convertTo == null) {
+    public <T> void AddConvert(Class<T> resultClass, ConvertTo<T> convertTo) {
+        if (resultClass == null || convertTo == null) {
             throw new IllegalArgumentException();
         }
-
-        map.put(cl, convertTo);
+        map.put(resultClass, convertTo);
     }
+
 }
